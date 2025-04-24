@@ -390,6 +390,17 @@ $(function () {
                         请在是否的空格上打上剔号以表示你的学生是否有下面的问题：\
                     </font>\
                 </p>';
+                desc += '<p>\
+                    <font lang="en">\
+                        If you are unsure about the answer, please click \'Yes\'\.\
+                    </font>\
+                    <font lang="zh">\
+                        如你並不確定該題的答案，請按「是」。\
+                    </font>\
+                    <font lang="cn">\
+                        如你並不确定该题的答案，请按「是」。\
+                    </font>\
+                </p>';
 
                 let qns = getQns();
                 totalSteps = totalSteps - 40 + qns.length*8;
@@ -703,8 +714,8 @@ $(function () {
                     desc += '<hr class="no-print" /><br/>'
 
                     desc += '<p style="text-align:right;" class="no-print">';
-                    desc += '<a href="/f/upload/85641/lu_index.html"><button class="gradientBtn animated wow fadeInUp delay-0-3s"><font lang="en">Return To Home</font><font lang="zh">返回主頁</font><font lang="cn">返回主页</font></button></a>';
-                    desc += '<a href="lu_quiz.html" style="margin-left:20px;"><button class="gradientBtn animated wow fadeInUp delay-0-3s"><font lang="en">Restart</font><font lang="zh">重做</font><font lang="cn">重做</font></button></a>';
+                    desc += '<a href="/"><button class="gradientBtn animated wow fadeInUp delay-0-3s"><font lang="en">Return To Home</font><font lang="zh">返回主頁</font><font lang="cn">返回主页</font></button></a>';
+                    desc += '<a href="/quiz.html" style="margin-left:20px;"><button class="gradientBtn animated wow fadeInUp delay-0-3s"><font lang="en">Restart</font><font lang="zh">重做</font><font lang="cn">重做</font></button></a>';
                     desc += '<a href="javascription:void(0);" onclick="window.print();return false;" style="margin-left:20px;"><button class="gradientBtn animated wow fadeInUp delay-0-3s"><font lang="en">Print Result</font><font lang="zh">列印結果</font><font lang="cn">列印结果</font></button></a>';
                     desc += '<br /><br /><br /><br /></p>';
 
